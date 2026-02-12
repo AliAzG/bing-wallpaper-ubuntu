@@ -131,3 +131,5 @@ if [ -n "$SET_WALLPAPER" ]; then
 tell application "System Events" to set picture of every desktop to ("$PICTURE_DIR/$filename" as POSIX file as alias)
 END
 fi
+
+gsettings set org.gnome.desktop.background picture-uri-dark file://"$PICTURE_DIR/$filename"
